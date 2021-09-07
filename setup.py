@@ -25,8 +25,6 @@ RHEL 6.4 and Ubuntu 'pangolin'.
 """
 
 import os
-import glob
-import subprocess
 import sys
 import unittest
 from distutils.spawn import find_executable
@@ -147,7 +145,7 @@ def get_carolina_extension():
     
      
     external_libs = ['boost_regex', 'boost_filesystem', 'boost_serialization',
-                     'boost_system', 'boost_signals', boost_python]
+                     'boost_system', 'boost_program_options', boost_python]
 
     print(boost_python)
 
